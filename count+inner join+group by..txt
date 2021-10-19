@@ -1,0 +1,2 @@
+Select Production.ProductSubcategory.ProductCategoryID, count(Production.ProductCategory.Name)as ProductnameCategory
+from Production.ProductSubcategory
