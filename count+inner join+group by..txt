@@ -1,0 +1,5 @@
+Select Production.ProductSubcategory.ProductCategoryID, count(Production.ProductCategory.Name)as ProductnameCategory
+from Production.ProductSubcategory
+inner join Production.ProductCategory 
+on Production.ProductSubcategory.ProductCategoryID=Production.ProductCategory.ProductCategoryID
+group by ProductSubcategory.ProductCategoryID
